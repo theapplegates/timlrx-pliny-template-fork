@@ -16,17 +16,6 @@ The tailwind starter blog has out of the box support for [Next.js's built-in ima
 To use in a new page route / javascript file, simply import the image component and call it e.g.
 
 ```js
-import Image from 'next/image'
-
-function Home() {
-  return (
-    <>
-      <h1>My Homepage</h1>
-      <Image src="/me.png" alt="Picture of the author" width={500} height={500} />
-      <p>Welcome to my homepage!</p>
-    </>
-  )
-}
 
 export default Home
 ```
@@ -38,6 +27,16 @@ Assuming we have a file called `ocean.jpg` in `data/img/ocean.jpg`, the followin
 ```
 ![ocean](/static/images/ocean.jpg)
 ```
+
+import Image from 'next/image'
+import img from 'data/img/ocean.jpeg'
+
+const css = { width: '100%', height: 'auto' }
+function Page() {
+  return <Image src={img} sizes="100vw" style={css} />
+}
+
+
 
 Alternatively, since we are using mdx, we can just use the image component directly! Note, that you would have to provide a fixed width and height. The `img` tag method parses the dimension automatically.
 
