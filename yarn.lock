@@ -1433,7 +1433,7 @@
     dotenv "^8.2.0"
     superagent "3.8.1"
 
-"@mdx-js/esbuild@^2.0.0":
+"@mdx-js/esbuild@^2.0.0", "@mdx-js/esbuild@^2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@mdx-js/esbuild/-/esbuild-2.1.5.tgz#94037e334d3b7917ac464e6d2ce974f061de9956"
   integrity sha512-9bfsKaD5ii4zcmy5WmERzQyDVXiQPHJk9FBQ3DLKzzmD56UIV1GFg16xVeg+vhWlO36U2VNiz5fYJIITZxUAJw==
